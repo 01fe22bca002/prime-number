@@ -1,4 +1,4 @@
-class calci{
+class calculator extends shape {
 
   void sum(int a,int b){
       System.out.println("Sum ="+a+b);
@@ -19,12 +19,13 @@ class calci{
 
   public static void main(String args[]){
   
-      calci c = new calci();
+      calculator c = new calculator();
       c.sum(10,20);
       c.subs(10,20);
       c.prod(10,20);
       c.div(10,20);
-  
+      System.out.println("area is "+c.area_of_triangle(2,3));
+      System.out.println("area is "+c.area_of_rectangle(4,5));
 
       
   }
